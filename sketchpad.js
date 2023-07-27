@@ -1,15 +1,18 @@
-for (let i = 0; i < 4; i++) {
-  for (let j = 0; j < 4; j++) {
-    const div = document.createElement("div");
-    div.className = "square";
+function createGrid(size) {
+  const container = document.getElementsByClassName("container")[0];
+  container.innerHTML = "";
+  for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
+      const div = document.createElement("div");
+      div.className = "square";
 
-    div.onmouseover = function (event) {
-      let target = event.target;
-      target.style.background = "pink";
-    };
+      div.onmouseover = function (event) {
+        let target = event.target;
+        target.style.background = "pink";
+      };
 
-    const container = document.getElementsByClassName("container")[0];
-    container.appendChild(div);
+      container.appendChild(div);
+    }
   }
 }
 
@@ -18,7 +21,7 @@ function resetMe() {
   if (popUp === null || isNaN(popUp)) {
     console.log("not valid input");
   }
-  // clear current grid
-  const container = document.getElementsByClassName("container")[0];
-  container.innerHTML = "";
+  createGrid(popUp);
 }
+
+createGrid(4);
