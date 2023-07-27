@@ -2,6 +2,8 @@
 
 This project is a web-based implementation of the classic Etch-A-Sketch toy, created using HTML, CSS, and JavaScript. The application allows users to create a grid of squares and color in individual squares by hovering the mouse over them.
 
+![etch_a_sketch preview gif](https://github.com/psmithdev/etch-a-sketch/assets/69760520/a51b95c7-ec07-4fbd-b2dc-f46f1d951785)
+
 # What I Learned
 
 ## HTML & CSS
