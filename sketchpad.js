@@ -12,3 +12,13 @@ for (let i = 0; i < 4; i++) {
     container.appendChild(div);
   }
 }
+
+function resetMe() {
+  let popUp = prompt("Please enter number of squares per side for new grid");
+  if (popUp === null || isNaN(popUp)) {
+    console.log("not valid input");
+  }
+  // clear current grid
+  const container = document.getElementsByClassName("container")[0];
+  container.innerHTML = "";
+}

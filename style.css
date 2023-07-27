@@ -9,3 +9,27 @@
   border: solid black;
   box-sizing: border-box;
 }
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #45a049;
+}
